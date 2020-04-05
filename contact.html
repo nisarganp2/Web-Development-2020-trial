@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3>My Contact Details:</h3>
+    <!-- <p>My Fictional Address</p>
+    <p>1234567890</p>
+    <p>myemail@gmail.com</p> -->
+
+    <!-- Form takes attributes,
+        action="" This will say what should or where should the form redirect,
+        method ="post" This will post all the form inputs and other values to the specified(action=""),
+        enctype="text/plain" This will tell that the post which is displayed on the action page should be in plain text
+        Here, action = "mailto:nisarganp2@gmail.com", will open the mail with the email specified in its address with <thead>
+          body containing the form details in plain text
+        </thead>
+    -->
+    <form action="mailto:nisarganp2@gmail.com" method="post" enctype="text/plain">
+    <!-- Different values for <input> -->
+      <!-- <label>Your Name:</label>
+      <input type="text" name="" value="">
+      <input type="number" name="" value="">
+      <input type="email" name="" value="">
+      <input type="file" name="" value="">
+      <input type="image" name="" value="">
+      <input type="color" name="" value="">
+      <input type="checkbox" name="" value="">
+      <input type="month" name="" value="">
+      <input type="date" name="" value="">
+      <input type="datetime-local" name="" value="">
+      <input type="password" name="" value="">
+      <input type="submit" name=""> -->
+
+      <!-- Basic Contact Form -->
+      <label>Your Name:</label>
+      <input type="text" name="Name" value=""><br><br>
+      <label>Your Email:</label>
+      <input type="email" name="Email Id" value=""><br><br>
+      <!-- The name="" value used is displayed on the body of the email -->
+      <!-- <br> tag is used to give line break -->
+     <label>Your Message:</label><br><br>
+      <textarea name="Message" rows="10" cols="20"></textarea><br><br>
+      <!-- <textarea>
+              It is the message area in the Form, where rows = height of the box, cols = width of the box
+      </textarea> -->
+      <input type="submit" name="">
+      <!-- For <input> type ="submit", we should not give the value. -->
+    </form>
+  </body>
+</html>
